@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+/* Apply styles to the container */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto; /* Center the container horizontally */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure container takes at least the viewport height */
+}
+
+/* TEMPORARY - JUST FOR DEBUGGING */
+footer {
+padding: 2rem;
+background-color: black;
+}
+
+nav {
+  background-color: black;
+  color: white;
+  font-size: 3rem;
+  font-family: 'Roboto Condensed';
+  padding: 0.5rem 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-button {
+  /* border: 1px solid white; */
+  height: 2rem;
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon.line {
+  width: 90%;
+  background-color: white;
+  /* border: 1px solid white; */
+  height: 1px;
+}
+
+main {
+  flex-grow: 1; /* Allow main to expand and take remaining space */
+  background: url('assets/images/mobileImage.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title {
+  position: relative;
+  top: -5rem;
+  /* left: -2rem; */
+}
+
+.title h1 {
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 6rem;
+}
+
+.title h2 {
+  font-weight: 200;
+  font-size: 3.8rem;
+  position: relative;
+  left: 1rem;
+
+}
+
+.call-to-action {
+  font-size: 3.5rem;
+  font-weight: 100;
+  color: rgb(147, 147, 147);
+  padding-left: 2rem;
+  position: relative;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+}
+
+.call-to-action span {
+  display: block;
+}
+
+.call-to-action button {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 1.8px;
+  position: relative;
+  bottom: -5rem;
+  font-size: 2rem;
+  width: 30%;
+  align-self: center;
+}
+
